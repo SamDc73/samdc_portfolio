@@ -206,7 +206,7 @@ h1.second-name {
   }
 
   .profile-image {
-    left: -20%;
+    left: 0; /* Adjusted to stay within the bounds of profile-bg */
     top: -10%;
     width: 45%;
     max-width: 400px;
