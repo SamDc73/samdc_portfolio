@@ -87,6 +87,7 @@
   box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
   width: 100%;
   z-index: -1;
+  padding:4%
 }
 
 .profile-container {
