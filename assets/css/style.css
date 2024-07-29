@@ -106,7 +106,7 @@
   width: 45%;
   max-width: 400px;
   left: -20%;
-  top: 0;
+  top: -5%;
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
@@ -115,6 +115,7 @@
   background-size: cover;
   background-position: center;
   padding-bottom: 55%;
+  z-index: 1;
 }
 
 
@@ -206,6 +207,11 @@ h1.second-name {
 
   .profile-image {
     left: 0;
+    top: -10%;
+    width: 100%;
+    max-width: none;
+    padding-bottom: 70%;
+    z-index: 1;
   }
 
   .profile-bg {
@@ -214,6 +220,35 @@ h1.second-name {
     width: 100%;
     height: calc(100% - 25%);
     top: 25%;
+  }
+
+  .profile-info {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    z-index: 2;
+  }
+
+  .profile-info h1 {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 100%;
+  }
+
+  .profile-info h1.first-name,
+  .profile-info h1.second-name {
+    position: relative;
+    left: 0;
+  }
+
+  .social-media-icons {
+    margin: 10px 0;
+    align-items: center;
+    position: relative;
+    z-index: 2;
   }
 }
 
