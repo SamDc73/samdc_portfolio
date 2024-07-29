@@ -187,11 +187,7 @@ h1.second-name {
   transform: scale(1.8);
   color: #f63d47;
 }
-@media (max-width: 991px) {
-  .profile-image-wrapper {
-    width: 40%;
-    left: -15%;
-  }
+
 
   .profile-info {
     left: 45%;
