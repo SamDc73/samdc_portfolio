@@ -207,10 +207,10 @@ h1.second-name {
 
   .profile-image {
     left: 0;
-    top: -70%;
+    top: -30%;
     width: 100%;
     max-width: none;
-    padding-bottom: 70%;
+    padding-bottom: 55%;
     z-index: 1;
   }
 
