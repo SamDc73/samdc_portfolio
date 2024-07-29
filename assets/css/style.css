@@ -119,6 +119,12 @@
   left: -20%;
 }
 
+@media (max-width: 767px) {
+  .profile-image {
+    left: 0;
+  }
+}
+
 .profile-image::before {
   content: "";
   position: absolute;
