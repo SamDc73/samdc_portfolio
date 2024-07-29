@@ -104,6 +104,7 @@
   position: absolute;
   width: 45%;
   transition: all 0.3s ease;
+  margin-left: 10px; /* Add margin to ensure space on the left */
 }
 
 .profile-image {
