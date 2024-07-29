@@ -206,10 +206,10 @@ h1.second-name {
   }
 
   .profile-image {
-    left: 0;
-    top: -30%;
-    width: 100%;
-    max-width: none;
+    left: -20%;
+    top: -10%;
+    width: 45%;
+    max-width: 400px;
     padding-bottom: 55%;
     z-index: 1;
   }
