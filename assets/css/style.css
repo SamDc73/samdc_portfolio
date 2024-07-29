@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 .cls-1 {
   fill: #ffc541;
@@ -98,7 +98,7 @@
   position: relative;
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
-  inset 0 0px 120px rgba(255, 0, 47, 0.75);
+    inset 0 0px 120px rgba(255, 0, 47, 0.75);
   width: 45%;
   height: 95%;
   flex: none;
@@ -120,15 +120,6 @@
 }
 
 
-
-
-.camera {
-  color: #FFFF;
-  position: absolute;
-  bottom: 28px;
-  left: 28px;
-  font-size: 1.3rem;
-}
 
 .profile-info {
   margin-top: 120px;
@@ -176,10 +167,12 @@ h1.second-name {
   line-height: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
 .social-media-icons a {
+  flex: 0 0 auto;
   margin: 5%;
   flex: auto;
   color: #f63d47;
@@ -189,6 +182,12 @@ h1.second-name {
 }
 
 
+
+
+.social-media-icons a:hover {
+  transform: scale(1.8);
+  color: #f63d47;
+}
 
 
 
@@ -1277,85 +1276,6 @@ body {
 
 [data-theme="dark"] .bg-themed {
   background-color: #343a40;
-}
-
-[data-theme="dark"] {
-  /* Comment */
-  /* Error */
-  /* Escape */
-  /* Generic */
-  /* Keyword */
-  /* Literal */
-  /* Name */
-  /* Operator */
-  /* Other */
-  /* Punctuation */
-  /* Comment.Hashbang */
-  /* Comment.Multiline */
-  /* Comment.Preproc */
-  /* Comment.PreprocFile */
-  /* Comment.Single */
-  /* Comment.Special */
-  /* Generic.Deleted */
-  /* Generic.Emph */
-  /* Generic.Error */
-  /* Generic.Heading */
-  /* Generic.Inserted */
-  /* Generic.Output */
-  /* Generic.Prompt */
-  /* Generic.Strong */
-  /* Generic.Subheading */
-  /* Generic.Traceback */
-  /* Keyword.Constant */
-  /* Keyword.Declaration */
-  /* Keyword.Namespace */
-  /* Keyword.Pseudo */
-  /* Keyword.Reserved */
-  /* Keyword.Type */
-  /* Literal.Date */
-  /* Literal.Number */
-  /* Literal.String */
-  /* Name.Attribute */
-  /* Name.Builtin */
-  /* Name.Class */
-  /* Name.Constant */
-  /* Name.Decorator */
-  /* Name.Entity */
-  /* Name.Exception */
-  /* Name.Function */
-  /* Name.Label */
-  /* Name.Namespace */
-  /* Name.Other */
-  /* Name.Property */
-  /* Name.Tag */
-  /* Name.Variable */
-  /* Operator.Word */
-  /* Text.Whitespace */
-  /* Literal.Number.Bin */
-  /* Literal.Number.Float */
-  /* Literal.Number.Hex */
-  /* Literal.Number.Integer */
-  /* Literal.Number.Oct */
-  /* Literal.String.Affix */
-  /* Literal.String.Backtick */
-  /* Literal.String.Char */
-  /* Literal.String.Delimiter */
-  /* Literal.String.Doc */
-  /* Literal.String.Double */
-  /* Literal.String.Escape */
-  /* Literal.String.Heredoc */
-  /* Literal.String.Interpol */
-  /* Literal.String.Other */
-  /* Literal.String.Regex */
-  /* Literal.String.Single */
-  /* Literal.String.Symbol */
-  /* Name.Builtin.Pseudo */
-  /* Name.Function.Magic */
-  /* Name.Variable.Class */
-  /* Name.Variable.Global */
-  /* Name.Variable.Instance */
-  /* Name.Variable.Magic */
-  /* Literal.Number.Integer.Long */
 }
 
 [data-theme="dark"] body {
