@@ -1,0 +1,39 @@
+
+# 2024-07-28 22:05:05.286854
++/exit
+
+# 2024-07-28 22:05:59.050665
++/add index.html assests/css/style.css
+
+# 2024-07-28 22:06:24.232751
++/add
+
+# 2024-07-28 22:07:03.999656
++/add /home/samdc/Dev/portfolYOU_plain_new/assests/css/style.css
+
+# 2024-07-28 22:08:49.766335
++/add assets
+
+# 2024-07-28 22:08:58.544981
++ls
+
+# 2024-07-28 22:09:11.808035
++/ls
+
+# 2024-07-28 22:09:57.739755
++the me.jpg have 2 bezels on top the bottom (red bezells) help me get rid of them with least amount of chagne possible 
+
+# 2024-07-28 22:10:39.836585
++/undo
+
+# 2024-07-28 22:11:29.385513
++no no the bezels are from box-shadow most likely not the image itself 
+
+# 2024-07-28 22:12:03.987774
++didn't fix it 
+
+# 2024-07-28 22:13:02.791639
++nope nothign yet, can it be because of the image is bit small ? and make it a big bigger and cut the excess will solve it ? 
+
+# 2024-07-28 22:36:56.442018
++/exit
