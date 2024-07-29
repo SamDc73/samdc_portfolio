@@ -106,7 +106,7 @@
   width: 45%;
   max-width: 400px;
   left: -20%;
-  top: -5%;
+  top: -30%;
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
@@ -202,12 +202,12 @@ h1.second-name {
 
 @media (max-width: 767px) {
   .profile {
-    padding: 15% 15px 15px;
+    padding: 0 15px;
   }
 
   .profile-image {
     left: 0;
-    top: -10%;
+    top: -70%;
     width: 100%;
     max-width: none;
     padding-bottom: 70%;
