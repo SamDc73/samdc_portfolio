@@ -37,3 +37,96 @@
 
 # 2024-07-28 22:36:56.442018
 +/exit
+
+# 2024-07-29 12:05:53.736457
++/add index.html
+
+# 2024-07-29 12:06:23.080087
++/add assets/css/style.css
+
+# 2024-07-29 12:06:27.729244
++/ls
+
+# 2024-07-29 12:07:36.924400
++for profile section: edit that the me.jpg in there will be outside the boarder but the screen is small it alighn with it 
+
+# 2024-07-29 12:09:20.193877
++i need some space to the left of the me.jpg not matter what, somethimes the photo is gettign cut on small screens 
+
+# 2024-07-29 12:10:06.926514
++still on not very small screen the photo is getting cut from the left. 
+
+# 2024-07-29 12:11:10.222887
++/undo
+
+# 2024-07-29 12:13:42.873615
++the image looks good , but the now I have the probelm of the text, not being dynamic, let's fix h1.firstname and h1.lastname so it can by more dynamic reltive to the photo, 
+
+# 2024-07-29 12:16:26.585672
++/undo
+
+# 2024-07-29 13:48:18.192488
++no I need to make name reletive to me.jpg 
+
+# 2024-07-29 16:03:29.131345
++/exit
+
+# 2024-07-29 16:04:56.084685
++fix it About section, 
+
+# 2024-07-29 16:05:24.492884
++/clea
+
+# 2024-07-29 16:05:26.435934
++/clear
+
+# 2024-07-29 16:05:50.252278
++/add assets/css/style.css
+
+# 2024-07-29 16:09:24.520558
++fix the About section in the code. the current behavior: the image(me.jpg) is going below the profile-bg on big screen when it shouldn't it should only go outside to the left and up. andon small screen text and the `social-media-icons` are going out of the box too. the expected behavior is on big screen to have the image outside the boarder to left and up a bit and on smal screen to have the phto just up out of the boarder but not to the left and have the text only on small screen to be all under the photo except of the h1.lastname and h1.firstname 
+
+# 2024-07-29 16:24:17.370750
++on small screen let's edit the behaviour, I want the ratio  to be kind of the same as the one on big screen, also the there should be space on top of the image.
+
+# 2024-07-29 16:25:31.437721
++I need the image to go verticlly even on small screen . but to far left wihout corrsong the border
+
+# 2024-07-29 16:27:54.181799
++on small screen it shouldnt go out of the profile-bg except for the top so no crossing the left or the right boarder of profile-bg
+
+# 2024-07-29 16:29:33.439049
++on small screen the icons of social media are crossing the boarder towrads the bottom, make the box flexible so they want be out the box 
+
+# 2024-07-29 16:30:09.221327
++/undo
+
+# 2024-07-29 16:30:57.798690
++try again it didnt't work, I want the logos or icons to be contained within profile-bg regardless of the size
+
+# 2024-07-29 16:31:59.808962
++/undo
+
+# 2024-07-29 16:32:05.523862
++didn't work, try again and take a look at the html it might be there.
+
+# 2024-07-29 16:32:29.223677
++/add index.html
+
+# 2024-07-29 16:33:46.640001
++/undo
+
+# 2024-07-29 16:33:53.997825
++/clear
+
+# 2024-07-29 16:35:10.144177
++for the profile section, on small screen some stuff (the logos) are spelling out of the profile-bg for some reason. can you see why. and fix it but first take a look over the whole code to make sure your aware of any thing that might be the cause of the problem 
+
+# 2024-07-29 16:38:09.261375
++/undo
+
+# 2024-07-29 16:40:16.948074
++thre is something off with the text in this profile section, I cna't copy the text and/or click on the icons . fix that bug 
+
+# 2024-07-29 16:44:08.293861
++/commit

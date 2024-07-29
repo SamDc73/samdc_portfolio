@@ -68,13 +68,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden; /* Changed to hidden to prevent overflow */
+  overflow: visible;
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px; /* Adjusted padding for responsiveness */
+  padding: 0 15px 0 calc(15px - 20%);
   box-sizing: border-box;
-  height: auto; /* Changed to auto for responsiveness */
+  height: 600px;
 }
 
 .profile-bg {
@@ -103,14 +103,16 @@
 
 .profile-image {
   background-image: url("../me.jpg");
-  position: relative; /* Changed to relative */
-  width: 100%; /* Changed to 100% for responsiveness */
+  position: absolute;
+  width: 45%;
   max-width: 400px;
-  margin: 0 auto; /* Centered the image */
+  left: -20%;
+  top: -30%;
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
   transition: all 0.3s ease;
+  /* Add styles for the image itself */
   background-size: cover;
   background-position: center;
   padding-bottom: 55%;
@@ -165,24 +167,24 @@ h1.second-name {
   line-height: 1.5rem;
 }
 
-.social-media-icons {
-  margin: 10px 0;
-  align-items: center;
+.social-media-icons {                                                                        
+  margin: 10px 0;                                                                            
+  display: flex; /* Added flex display for better alignment */                               
+  justify-content: center; /* Centered the icons */                                          
+  align-items: center;                                                                       
+  flex-wrap: wrap; /* Added flex-wrap to handle overflow */                                  
+}                                                                                            
 
-}
+.social-media-icons a {                                                                      
+  color: #f63d47;                                                                            
+  font-size: 1.4rem;                                                                         
+  margin: 0.5rem; /* Adjusted margin for spacing */                                          
+}                                                                                            
 
-.social-media-icons a {
-  color: #f63d47;
-  font-size: 1.4rem;
-  margin-right: 1rem;
-
-}
-
-.social-media-icons a:hover {
-  transform: scale(1.8);
-  color: #f63d47;
-}
-
+.social-media-icons a:hover {                                                                
+  transform: scale(1.2); /* Adjusted scale for better UX */                                  
+  color: #f63d47;                                                                            
+}      
 
 .profile-info {
   box-sizing: border-box;
@@ -244,6 +246,8 @@ h1.second-name {
   }
 
   .social-media-icons {
+    display: flex;
+    justify-content: center;
     margin: 10px 0;
     align-items: center;
     position: relative;
