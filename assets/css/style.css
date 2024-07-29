@@ -152,12 +152,19 @@
 
 h1.first-name {
   position: relative;
-  left: -40%;
+  left: -20%;
 }
 
 h1.second-name {
   position: relative;
-  left: -30%;
+  left: -10%;
+}
+
+@media (max-width: 767px) {
+  h1.first-name, h1.second-name {
+    left: 0;
+    text-align: center;
+  }
 }
 
 .profile-info h2 {
