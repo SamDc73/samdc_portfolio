@@ -163,6 +163,7 @@ h1.second-name {
 
 .profile-info p {
   line-height: 1.5rem;
+  word-wrap: break-word; /* Ensure text wraps properly within the container */
 }
 
 .social-media-icons {
