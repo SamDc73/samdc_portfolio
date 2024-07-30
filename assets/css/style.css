@@ -62,6 +62,7 @@
 
 /*profile */
 .profile {
+  margin-bottom: 40px; /* Adjust the value as needed */
   animation: loadProfile 0.6s ease-in-out;
   animation-fill-mode: both;
   font-size: 0.9rem;
