@@ -136,6 +136,7 @@
   z-index: 1;
   padding: 20px; /* Add padding to ensure text does not touch the edges */
   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  padding-right: 10%;
 }
 
 .profile-info h1 {
