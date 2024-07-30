@@ -172,6 +172,7 @@ h1.second-name {
   align-items: center;
   flex-wrap: wrap;
   user-select: text;
+  gap: 10px; /* Add gap between icons */
 }
 
 .social-media-icons a {
