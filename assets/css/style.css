@@ -169,7 +169,14 @@ h1.second-name {
   display: flex;
   justify-content: center;
   align-items: center;
-margin-bottom: 10%;}
+  margin-bottom: 10%;
+}
+
+@media (max-width: 767px) {
+  .social-media-icons {
+    margin-bottom: 5%;
+  }
+}
 
 .social-media-icons a {
   color: #f63d47;
