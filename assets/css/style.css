@@ -60,6 +60,9 @@
 }
 
 
+.row {                                                                                       
+  margin-bottom: 40px; /* Adjust the value as needed */
+
 /*profile */
 .profile {
   margin-bottom: 40px; /* Adjust the value as needed */
