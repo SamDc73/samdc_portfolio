@@ -166,27 +166,19 @@ h1.second-name {
 }
 
 .social-media-icons {
-  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  user-select: text;
-  gap: 10px; /* Add gap between icons */
-  padding: 20px; /* Add padding to create space between icons and border */
-}
+margin-bottom: 10%;}
 
 .social-media-icons a {
   color: #f63d47;
   font-size: 1.4rem;
-  margin: 0.5rem;
   user-select: text;
 }
 
 .social-media-icons a:hover {
   transform: scale(1.2);
-  color: #f63d47;
-  user-select: text;
 }
 
 .profile-info {
