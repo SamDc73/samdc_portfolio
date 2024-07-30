@@ -60,12 +60,13 @@
 }
 
 
-.row {                                                                                       
-  margin-bottom: 40px; /* Adjust the value as needed */
+.block {
+  margin-bottom: 10vh;}
+
 
 /*profile */
 .profile {
-  margin-bottom: 40px; /* Adjust the value as needed */
+  margin-bottom: 40px; 
   animation: loadProfile 0.6s ease-in-out;
   animation-fill-mode: both;
   font-size: 0.9rem;
@@ -76,12 +77,10 @@
   width: 100%;
   max-width: 1140px;
   min-height: 55vh;
-
 }
 
 .profile-bg {
   position: absolute;
-  bottom: 0;
   border-radius: 10px;
   background: white;
   box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
@@ -108,7 +107,6 @@
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
   transition: all 0.3s ease;
-  /* Add styles for the image itself */
   background-size: cover;
   background-position: center;
   padding-bottom: 55%;
@@ -170,31 +168,23 @@ h1.second-name {
 .social-media-icons {
   margin: 10px 0;
   display: flex;
-  /* Added flex display for better alignment */
   justify-content: center;
-  /* Centered the icons */
   align-items: center;
   flex-wrap: wrap;
-  /* Added flex-wrap to handle overflow */
   user-select: text;
-  /* Allow text selection */
 }
 
 .social-media-icons a {
   color: #f63d47;
   font-size: 1.4rem;
   margin: 0.5rem;
-  /* Adjusted margin for spacing */
   user-select: text;
-  /* Allow text selection */
 }
 
 .social-media-icons a:hover {
   transform: scale(1.2);
-  /* Adjusted scale for better UX */
   color: #f63d47;
   user-select: text;
-  /* Allow text selection */
 }
 
 .profile-info {
@@ -203,51 +193,23 @@ h1.second-name {
   left: 45%;
   width: 55%;
   user-select: text;
-  /* Allow text selection */
 }
 
 
 .profile-info h1 {
   font-size: 2.5rem;
   user-select: text;
-  /* Allow text selection */
-}
-
-
-@media (max-width: 767px) {
-  .profile-image {
-    position: absolute;
-    left: 0; 
-    width: 40%;  
-    max-width: 160px;  
-    padding-bottom: 40%;  
-    margin: 0;  
-    
-  }
 }
 
 
 
+
+
 @media (max-width: 767px) {
-  .profile {
-    padding: 0 15px;
-  }
 
   .profile-image {
+    margin-left: 0;
     left: 0;
-    top: -10%;
-    width: 45%;
-    max-width: 400px;
-    padding-bottom: 55%;
-    z-index: 1;
-  }
-
-  .profile-bg {
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: calc(100% - 10%);
-    top: 10%;
   }
 
   .profile-info {
@@ -256,27 +218,10 @@ h1.second-name {
     width: 100%;
     padding: 15%;
   }
-
-  .profile-info h1 {
-    position: absolute;
-    top: -60px;
-    left: 20px;
-    width: 100%;
-  }
-
   .profile-info h1.first-name,
   .profile-info h1.second-name {
     position: relative;
     left: 0;
-  }
-
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-    align-items: center;
-    position: relative;
-    z-index: 2;
   }
 }
 
