@@ -72,7 +72,7 @@
   width: 100%;
   max-width: 1140px;
   box-sizing: border-box;
-
+  margin-bottom: 20px; /* Adjust as needed */
 }
 
 .profile-bg {
