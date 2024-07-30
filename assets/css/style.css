@@ -72,6 +72,7 @@
   width: 100%;
   max-width: 1140px;
   box-sizing: border-box;
+  min-height: 600px;
 
 }
 
@@ -81,7 +82,6 @@
   border-radius: 10px;
   background: white;
   box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
-
 }
 
 .profile-container {
@@ -90,9 +90,6 @@
   align-items: stretch;
   width: 100%;
   position: relative;
-  padding-left: 20%;
-
-
 }
 
 
@@ -127,7 +124,7 @@
   opacity: 0.8;
   mix-blend-mode: screen;
   border-radius: 25px;
-
+  
 }
 
 .profile-info {
@@ -217,12 +214,12 @@ h1.second-name {
 @media (max-width: 767px) {
   .profile-image {
     position: absolute;
-    left: 0;
-    width: 40%;
-    max-width: 160px;
-    padding-bottom: 40%;
-    margin: 0;
-
+    left: 0; 
+    width: 40%;  
+    max-width: 160px;  
+    padding-bottom: 40%;  
+    margin: 0;  
+    
   }
 }
 
