@@ -1,31 +1,29 @@
 {{ define "main" }}
-  <div class="card-columns m-3 mt-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-3 mt-5" data-masonry='{"percentPosition": true }'>
     {{ range .Pages }}
-    <div class="wow animated fadeIn" data-wow-delay=".15s">
-      <a href="{{ .Params.external_url | default .RelPermalink }}" class="project card text-themed"{{ if .Params.external_url }} target="_blank" rel="noopener noreferrer"{{ end }}>
-        {{ if .Params.image }}
-          <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Params.name }}">
-        {{ end }}
-        <div class="card-body">
-          <h5 id="{{ .File.BaseFileName | urlize }}-name" class="card-title">
-            {{ if .Params.github }}
-              <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |
-            {{ end }}
-            {{ .Params.name }}
-          </h5>
-          <p id="{{ .File.BaseFileName | urlize }}-desc" class="card-text">{{ .Params.description }}</p>
-          <p id="{{ .File.BaseFileName | urlize }}-tools" class="card-text">
-            {{ range .Params.tools }}
-              <span class="badge badge-pill text-primary border border-primary ml-1">{{ . }}</span>
-            {{ end }}
-          </p>
-        </div>
-      </a>
+    <div class="col">
+      <div class="wow animated fadeIn" data-wow-delay=".15s">
+        <a href="{{ .Params.external_url | default .RelPermalink }}" class="project card h-100 text-decoration-none"{{ if .Params.external_url }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          {{ if .Params.image }}
+            <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Params.name }}">
+          {{ end }}
+          <div class="card-body">
+            <h5 id="{{ .File.BaseFileName | urlize }}-name" class="card-title">
+              {{ if .Params.github }}
+                <i class="fab fa-github" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub Repository"></i> |
+              {{ end }}
+              {{ .Params.name }}
+            </h5>
+            <p id="{{ .File.BaseFileName | urlize }}-desc" class="card-text">{{ .Params.description }}</p>
+            <p id="{{ .File.BaseFileName | urlize }}-tools" class="card-text">
+              {{ range .Params.tools }}
+                <span class="badge rounded-pill bg-primary text-white border border-primary me-1">{{ . }}</span>
+              {{ end }}
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
-  {{ end }}
-  
+    {{ end }}
   </div>
 {{ end }}
-
-
-
