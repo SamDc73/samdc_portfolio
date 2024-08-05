@@ -75,14 +75,12 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 20px;
-  width: 100%; /* Ensure the width aligns with other elements */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .profile-image {
   background-image: url("../me.jpg");
   position: absolute;
-  width: 40%;
+  width: 45%;
   left: calc(-10% - 2vw);  /* Dynamic left positioning */
   top: calc(-30% - 3vw);   /* Dynamic top positioning */
   border-radius: 25px;
