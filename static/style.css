@@ -75,6 +75,8 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 20px;
+  width: 100%; /* Ensure the width aligns with other elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .profile-image {
