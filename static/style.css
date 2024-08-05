@@ -81,7 +81,8 @@
   background-image: url("../me.jpg");
   position: absolute;
   width: 45%;
-  left: calc(-10% - 2vw + 20px);  
+  --min-left-space: 20px;
+  left: calc(-10% - 2vw + var(--min-left-space));  
   top: calc(-30% - 3vw);   
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
