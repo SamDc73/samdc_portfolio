@@ -81,8 +81,8 @@
   background-image: url("../me.jpg");
   position: absolute;
   width: 45%;
-  left: calc(-10% - 2vw + 20px);  /* Dynamic left positioning with minimum 20px space */
-  top: calc(-30% - 3vw);   /* Dynamic top positioning */
+  left: calc(-10% - 2vw + 20px);  
+  top: calc(-30% - 3vw);   
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
