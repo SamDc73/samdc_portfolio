@@ -1,37 +1,46 @@
 {{ define "main" }}
 <div class="container-fluid justify-content-center">
-  <!-- Search functionality -->
-  <div class="input-group mt-5 px-3">
-    <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts.." />
-    <div class="input-group-append">
-      <span class="input-group-text border border-primary bg-primary text-white">
-        <i class="fas fa-search"></i>
-      </span>
+    <!-- Search functionality -->
+    <div class="input-group mt-5 px-3">
+      <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts.." />
+      <div class="input-group-append">
+        <span class="input-group-text border border-primary bg-primary text-white">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <a href="{{ "tags" | relLangURL }}" class="btn btn-outline-primary ml-1">
+        <i class="fas fa-tags"></i>
+      </a>        
     </div>
-    <a href="{{ "tags" | relLangURL }}" class="btn btn-outline-primary ml-1">
-      <i class="fas fa-tags"></i>
-    </a>        
-  </div>
-  <ul class="px-3" id="results-container"></ul>
-  
-<div class="container-fluid justify-content-center">
+    <ul class="px-3" id="results-container"></ul>
+
+  <!-- Blog posts -->
   <div class="card-group mt-2">
     {{ range .Pages }}
+    {{ $textColor := "text-themed" }}
+    {{ if .Params.color }}
+      {{ $textColor = "text-white" }}
+    {{ end }}
     <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
       <a href="{{ .Permalink }}" class="post card {{ if .Params.color }}bg-{{ .Params.color }}{{ else }}border border-{{ .Params.color | default "primary" }}{{ end }}">
-        <div class="card-body {{ if .Params.color }}text-white{{ else }}text-themed{{ end }}">
+        <div class="card-body {{ $textColor }}">
           <h3 class="card-title">{{ .Title }}</h3>
           <p class="card-text">
             {{ range .Params.tags }}
-              <span class="badge tag-link {{ if $.Params.color }}badge-light{{ else }}badge-dark{{ end }}">{{ . }}</span>
+              <span class="badge tag-{{ $.Params.color | default "primary" }} {{ $textColor }}">{{ . }}</span>
             {{ end }}
           </p>
           <p class="card-text">{{ .Params.description }}</p>
         </div>
-        <div class="card-footer {{ if .Params.color }}text-white{{ else }}text-themed{{ end }}">{{ .Date.Format "02 January 2006" }}</div>
+        <div class="card-footer {{ $textColor }}">{{ .Date.Format "02 January 2006" }}</div>
       </a>
     </div>
     {{ end }}
   </div>
 </div>
 {{ end }}
+
+
+
+
+

@@ -82,8 +82,8 @@
   position: absolute;
   width: 45%;
   --min-left-space: 20px;
-  left: calc(-10% - 2vw + var(--min-left-space));  
-  top: calc(-30% - 3vw);   
+  left: calc(-10% - 2vw + var(--min-left-space));
+  top: calc(-30% - 3vw);
   border-radius: 25px;
   box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(255, 0, 47, 0.75);
@@ -181,11 +181,11 @@ main {
   padding: 5vh 0;
 }
 
-main > * {
+main>* {
   margin-bottom: 5vh;
 }
 
-main > *:last-child {
+main>*:last-child {
   margin-bottom: 0;
 }
 
@@ -567,7 +567,7 @@ body {
   width: 100% !important;
 }
 
-.navbar{
+.navbar {
   margin-bottom: 7em;
 }
 
@@ -708,6 +708,7 @@ body {
   transform: translateY(-8px);
   box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
 }
+
 
 .timeline-body {
   position: relative;
@@ -1212,26 +1213,48 @@ body {
 }
 
 
-.title-link {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.15s ease-in-out;
-}
-
-.title-link:hover {
-  color: #007bff;
-  text-decoration: underline;
-}
-
 .tag-link {
   display: inline-block;
   margin-right: 0.2rem;
   margin-bottom: 0.2rem;
+  background-color: rgba(211, 193, 193, 0.9);
+  color: #000;
   transition: background-color 0.15s ease-in-out;
 }
 
 .tag-link:hover {
-  background-color: #0056b3;
+  background-color: rgb(255, 255, 255);
+  color: #000;
   text-decoration: none;
 }
 
+
+/* Blogs */
+
+.badge {
+  display: inline-block;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid currentColor;
+}
+.tag-primary { background-color: rgba(0, 123, 255, 0.1); }
+.tag-primary:hover { background-color: rgba(0, 123, 255, 0.2); }
+
+.tag-info { background-color: rgba(23, 162, 184, 0.1); }
+.tag-info:hover { background-color: rgba(23, 162, 184, 0.2); }
+
+.tag-success { background-color: rgba(40, 167, 69, 0.1); }
+.tag-success:hover { background-color: rgba(40, 167, 69, 0.2); }
+
+.tag-danger { background-color: rgba(220, 53, 69, 0.1); }
+.tag-danger:hover { background-color: rgba(220, 53, 69, 0.2); }
+
+.tag-warning { background-color: rgba(255, 193, 7, 0.1); }
+.tag-warning:hover { background-color: rgba(255, 193, 7, 0.2); }
+
+.tag-dark { background-color: rgba(52, 58, 64, 0.1); }
+.tag-dark:hover { background-color: rgba(52, 58, 64, 0.2); }
+
+.tag-secondary { background-color: rgba(108, 117, 125, 0.1); }
+.tag-secondary:hover { background-color: rgba(108, 117, 125, 0.2); }
