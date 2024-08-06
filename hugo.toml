@@ -1,3 +1,76 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+# Enable emoji in markdown
+enableEmoji = true
+
+# Pagination
+paginate = 6
+paginatePath = "page"
+
+[params]
+  description = "I turn coffee :coffee: into code, use tabs over spaces and never break production."
+  favicon = "favicon.ico"
+  images = ["me.jpg"]
+
+[author]
+  name = "Your Name"
+  email = "your.email@example.com"
+
+[taxonomies]
+  tool = "tools"
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[permalinks]
+  blog = "/blog/:year/:month/:day/:slug/"
+  tools = "/projects/tags/:slug/"
+
+
+[outputs]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+
+[params.social]
+  github = "your-github-username"
+  twitter = "your-twitter-username"
+  linkedin = "your-linkedin-username"
+
+[params.style]
+  # Add any custom CSS classes here
+  # customCSS = ["custom.css"]
+
+[params.features]
+  search = true
+  portfolio = true
