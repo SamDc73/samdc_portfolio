@@ -1,0 +1,28 @@
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <div class="project card text-themed">
+    <a href="{{ .Params.external_url | default .RelPermalink }}" {{ if .Params.external_url }}target="_blank" rel="noopener noreferrer"{{ end }}>
+      {{ if .Params.image }}
+        <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Params.name }}">
+      {{ end }}
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ if .Params.github }}
+            <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |
+          {{ end }}
+          {{ .Params.name }}
+        </h5>
+        <p class="card-text">{{ .Params.description }}</p>
+      </div>
+    </a>
+    {{ if .Params.tools }}
+    <div class="card-tags bg-transparent p-3"> <!-- Added padding here -->
+      {{ range .Params.tools }}
+        <a href="{{ "/projects/tags/" | relLangURL }}{{ . | urlize }}/" 
+           class="badge badge-pill text-primary border border-primary ml-1 mb-1" 
+           style="text-decoration: none;"
+           onclick="event.stopPropagation();">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
