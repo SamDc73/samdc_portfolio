@@ -1,75 +1,37 @@
 {{ define "main" }}
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-  <body class="h-100 d-flex flex-column">
-    <main class="flex-shrink-0 container mt-5">
-
-
-      <!-- Search functionality -->
-      <div class="input-group mt-5 px-3">
-        <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts.." />
-        <div class="input-group-append">
-          <span class="input-group-text border border-primary bg-primary text-white">
-            <i class="fas fa-search"></i>
-          </span>
+<div class="container-fluid justify-content-center">
+  <!-- Search functionality -->
+  <div class="input-group mt-5 px-3">
+    <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts.." />
+    <div class="input-group-append">
+      <span class="input-group-text border border-primary bg-primary text-white">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+    <a href="{{ "tags" | relLangURL }}" class="btn btn-outline-primary ml-1">
+      <i class="fas fa-tags"></i>
+    </a>        
+  </div>
+  <ul class="px-3" id="results-container"></ul>
+  
+<div class="container-fluid justify-content-center">
+  <div class="card-group mt-2">
+    {{ range .Pages }}
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+      <a href="{{ .Permalink }}" class="post card {{ if .Params.color }}bg-{{ .Params.color }}{{ else }}border border-{{ .Params.color | default "primary" }}{{ end }}">
+        <div class="card-body {{ if .Params.color }}text-white{{ else }}text-themed{{ end }}">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-text">
+            {{ range .Params.tags }}
+              <span class="badge tag-link {{ if $.Params.color }}badge-light{{ else }}badge-dark{{ end }}">{{ . }}</span>
+            {{ end }}
+          </p>
+          <p class="card-text">{{ .Params.description }}</p>
         </div>
-        <a href="{{ "tags" | relLangURL }}" class="btn btn-outline-primary ml-1">
-          <i class="fas fa-tags"></i>
-        </a>        
-      </div>
-      <ul class="px-3" id="results-container"></ul>
-
-      <!-- Blog posts -->
-      <div class="card-group mt-2">
-        {{ range .Pages }}
-        <div class="col-lg-6 my-3 wow animated fadeIn">
-          <div class="post card border border {{ if .Params.color }}bg-{{ .Params.color }}{{ end }}"> 
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="{{ .Permalink }}" class="{{ if .Params.color }}text-white{{ end }}">{{ .Title }}</a>
-              </h3>
-              <p>
-                {{ range .Params.tags }}
-                  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge {{ if $.Params.color }}badge-light{{ else }}badge-primary{{ end }}">{{ . }}</a>
-                {{ end }}
-              </p>22
-              <p class="card-text {{ if .Params.color }}text-white{{ end }}">{{ .Params.description }}</p>
-            </div>
-            <div class="card-footer {{ if .Params.color }}text-white{{ else }}text-muted{{ end }}">{{ .Date.Format "02 January 2006" }}</div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      
-    </main>
-
-    <footer class="mt-auto py-3 text-center">
-      <!-- Footer content here -->
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-    <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-    <script>
-      var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById("search-input"),
-        resultsContainer: document.getElementById("results-container"),
-        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
-        noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
-        json: "/portfolYOU/search.json",
-      });
-    </script>
-  </body>
-</html>
+        <div class="card-footer {{ if .Params.color }}text-white{{ else }}text-themed{{ end }}">{{ .Date.Format "02 January 2006" }}</div>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
