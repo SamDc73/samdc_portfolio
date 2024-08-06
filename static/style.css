@@ -208,18 +208,39 @@ main>*:last-child {
   padding: 20px;
   text-align: center;
   transition: 250ms transform ease-in-out;
-  width: 9rem;
   cursor: pointer;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.skills-card h4 {
-  padding-bottom: 1rem;
-  font-weight: 200;
-
+.skills-card i,
+.skills-card .skill-icon {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
 }
 
 .skills-card i {
-  padding: 1rem;
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding: 0; /* Remove padding to maintain consistent size */
+}
+
+.skills-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .skills-card:hover {
@@ -230,6 +251,7 @@ main>*:last-child {
   transform: translateY(5px);
 }
 /*skills End  */
+
 
 
 /* animations */

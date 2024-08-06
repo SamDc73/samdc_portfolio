@@ -89,6 +89,29 @@ paginatePath = "page"
     icon = "fab fa-instagram"
 
 
+[params.skills]
+  [[params.skills.list]]
+    name = "Python"
+    image = "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" 
+
+  [[params.skills.list]]
+    name = "PyTorch"
+    image = "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg"
+
+  [[params.skills.list]]
+    name = "SQL"
+    image = "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-plain.svg"
+
+  [[params.skills.list]]
+    name = "C++"
+    image = "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+
+    [[params.skills.list]]
+    name = "HTML"
+    image = "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+
+
+
 [params.style]
   # Add any custom CSS classes here
   # customCSS = ["custom.css"]

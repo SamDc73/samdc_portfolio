@@ -66,40 +66,7 @@
           </div>
 
           <!--Skills-->
-          <div class="row my-5">
-            <div class="col mt-4 mx-auto">
-              <div class="skills-wrapper bg-themed">
-                <div class="skills">
-                  <div class="row g-4">
-                    <div class="col-6 col-sm-4 col-md-3">
-                      <div class="skills-card">
-                        <i class="fa-brands fa-python"></i>
-                        <p>Python</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                      <div class="skills-card">
-                        <i class="fa-solid fa-database"></i>
-                        <p>SQL</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                      <div class="skills-card">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <p>Data Analysis</p>
-                      </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                      <div class="skills-card">
-                        <i class="fa-solid fa-brain"></i>
-                        <p>Machine Learning</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {{ partial "skills.html" . }}
         </div>
       </div>
     </main>
