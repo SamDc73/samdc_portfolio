@@ -63,9 +63,31 @@ paginatePath = "page"
 
 
 [params.social]
-  github = "your-github-username"
-  twitter = "your-twitter-username"
-  linkedin = "your-linkedin-username"
+  [[params.social.links]]
+    name = "GitHub"
+    url = "https://www.github.com/samdc73"
+    icon = "fa-brands fa-github"
+
+  [[params.social.links]]
+    name = "GitLab"
+    url = "https://www.gitlab.com/samdc73"
+    icon = "fa-brands fa-gitlab"
+
+  [[params.social.links]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/samdc73"
+    icon = "fa-brands fa-linkedin-in"
+
+  [[params.social.links]]
+    name = "Twitter"
+    url = "https://twitter.com/samdc73"
+    icon = "fab fa-twitter"
+
+  [[params.social.links]]
+    name = "Instagram"
+    url = "https://www.instagram.com/samdc73"
+    icon = "fab fa-instagram"
+
 
 [params.style]
   # Add any custom CSS classes here

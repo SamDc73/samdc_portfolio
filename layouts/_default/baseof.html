@@ -7,74 +7,27 @@
     <meta property="og:title" content="portfolYOU" />
     <title>portfolYOU</title>
     <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never break production." />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "assets/favicon.ico" | relURL }}" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{ "style.css" | relURL }}">
   </head>
   <body class="h-100 d-flex flex-column">
-    <div class="container"></div>
+    <!-- Navbar -->
+    {{ partial "navbar.html" . }}
+    
     <!-- Main content -->
-    <main class="flex-shrink-0 container mt-5">{{ partial "navbar.html" . }} {{ block "main" . }}{{ end }}
+    <main class="flex-shrink-0 container mt-5">
+      {{ block "main" . }}{{ end }}
     </main>
     
-      <footer class="mt-auto py-3 text-center">
-      <small class="text-muted mb-2"> Made with <i class="fas fa-heart"></i> by <strong>In SF</strong> </small>
-      <div class="container-fluid justify-content-center">
-        <a
-          class="social mx-1"
-          href="mailto:info@samdc73.com"
-          style="color: #6c757d"
-          onmouseover="this.style.color='#db4437'"
-          onmouseout="this.style.color='#6c757d'"
-        >
-          <i class="fas fa-envelope fa-1x"></i>
-        </a>
-        <a
-          class="social mx-1"
-          href="https://www.github.com/samdc73"
-          style="color: #6c757d"
-          onmouseover="this.style.color='#333333'"
-          onmouseout="this.style.color='#6c757d'"
-        >
-          <i class="fab fa-github fa-1x"></i>
-        </a>
-        <a
-          class="social mx-1"
-          href="https://www.linkedin.com/in/samdc73"
-          style="color: #6c757d"
-          onmouseover="this.style.color='#007bb5'"
-          onmouseout="this.style.color='#6c757d'"
-        >
-          <i class="fab fa-linkedin-in fa-1x"></i>
-        </a>
-        <a
-          class="social mx-1"
-          href="https://medium.com/@samdc73"
-          style="color: #6c757d"
-          onmouseover="this.style.color='#00ab6c'"
-          onmouseout="this.style.color='#6c757d'"
-        >
-          <i class="fab fa-medium fa-1x"></i>
-        </a>
-        <a
-          class="social mx-1"
-          href="https://www.twitter.com/samdc73"
-          style="color: #6c757d"
-          onmouseover="this.style.color='#1da1f2'"
-          onmouseout="this.style.color='#6c757d'"
-        >
-          <i class="fab fa-twitter fa-1x"></i>
-        </a>
-      </div>
-    </footer>
-
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
 
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="{{ "script.js" | relURL }}"></script>
   </body>
 </html>

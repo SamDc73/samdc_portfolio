@@ -22,21 +22,11 @@
                 </div>
                 <div class="social-media-icons">
                   <div class="row">
-                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="https://www.github.com/samdc73" title="GitHub">
-                      <i class="fa-brands fa-github"></i>
+                    {{ range .Site.Params.social.links }}
+                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="{{ .url }}" title="{{ .name }}">
+                      <i class="{{ .icon }}"></i>
                     </a>
-                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="https://www.gitlab.com/samdc73" title="Gitlab">
-                      <i class="fa-brands fa-gitlab"></i>
-                    </a>
-                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samdc73" title="LinkedIn">
-                      <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="https://twitter.com/samdc73" title="Twitter">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="col-auto zoom" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/samdc73" title="Instagram">
-                      <i class="fab fa-instagram"></i>
-                    </a>
+                    {{ end }}
                   </div>
                 </div>
               </div>

@@ -1,0 +1,18 @@
+<footer class="mt-auto py-3 text-center">
+  <small class="text-muted mb-2"> Made with <i class="fas fa-heart"></i> by <strong>In SF</strong> </small>
+  <div class="container-fluid justify-content-center">
+    {{ range .Site.Params.social.links }}
+      <a
+        class="social mx-1"
+        href="{{ .url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="color: #6c757d"
+        onmouseover="this.style.color='{{ .hoverColor }}'"
+        onmouseout="this.style.color='#6c757d'"
+      >
+        <i class="{{ .icon }} fa-1x"></i>
+      </a>
+    {{ end }}
+  </div>
+</footer>
