@@ -88,6 +88,29 @@ paginatePath = "page"
     url = "https://www.instagram.com/samdc73"
     icon = "fab fa-instagram"
 
+[params.experience]
+  [[params.experience.items]]
+    title = "Quality Analyst"
+    company = "Natera"
+    date = "2022 — current"
+    description = "Main responsibilities and achievements:"
+    bullets = [
+      "Implemented automated testing procedures, reducing manual testing time by 40%",
+      "Collaborated with cross-functional teams to improve product quality",
+      "Developed and maintained comprehensive test plans and test cases"
+    ]
+
+  [[params.experience.items]]
+    title = "IT Support"
+    company = "Al-Aqeelah Takaful Insurance"
+    date = "2014 — 2018"
+    description = "Key contributions:"
+    bullets = [
+      "Provided technical support to over 100 employees, resolving hardware and software issues",
+      "Implemented a new ticketing system, improving response time by 30%",
+      "Conducted regular training sessions on IT security best practices"
+    ]
+
 
 [params.skills]
   [[params.skills.list]]

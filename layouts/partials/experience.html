@@ -1,0 +1,24 @@
+<div class="row my-5">
+  <div class="col mt-4 mx-auto">
+    <div class="timeline-body bg-themed">
+      {{ range .Site.Params.experience.items }}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="content">
+          <h3 class="experience-title">{{ .title }}</h3>
+          <h4 class="experience-company">{{ .company }}</h4>
+          <h6 class="date">{{ .date }}</h6>
+          <p class="experience-description">{{ .description }}</p>
+          {{ if .bullets }}
+          <ul class="experience-bullets">
+            {{ range .bullets }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
