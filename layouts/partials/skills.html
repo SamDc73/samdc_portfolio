@@ -1,23 +1,22 @@
-<div class="row my-5">
-    <div class="col mt-4 mx-auto">
-      <div class="skills-wrapper bg-themed">
-        <div class="skills">
-          <div class="row g-4">
-            {{ range .Site.Params.skills.list }}
-              <div class="col-6 col-sm-4 col-md-3">
-                <div class="skills-card">
-                  {{ if .image }}
-                    <img src="{{ .image | relURL }}" alt="{{ .name }}" class="skill-icon">
-                  {{ else }}
-                    <i class="{{ .icon }}"></i>
-                  {{ end }}
-                  <p>{{ .name }}</p>
-                </div>
-              </div>
-            {{ end }}
+<section id="skills">
+  <div class="col mt-4 mx-auto">
+    <div class="skills-wrapper bg-themed">
+      <div class="skills">
+        <div class="row g-4">
+          {{ range .Site.Params.skills.list }}
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="skills-card">
+              {{ if .image }}
+              <img src="{{ .image | relURL }}" alt="{{ .name }}" class="skill-icon" />
+              {{ else }}
+              <i class="{{ .icon }}"></i>
+              {{ end }}
+              <p>{{ .name }}</p>
+            </div>
           </div>
+          {{ end }}
         </div>
       </div>
     </div>
   </div>
-  
+</section>

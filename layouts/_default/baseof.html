@@ -13,17 +13,16 @@
     <link rel="stylesheet" href="{{ "style.css" | relURL }}">
   </head>
   <body class="h-100 d-flex flex-column">
-    <!-- Navbar -->
-    {{ partial "navbar.html" . }}
-    
-    <!-- Main content -->
     <main class="flex-shrink-0 container mt-5">
+      {{ if .IsHome }}
+        {{ partial "home_navbar.html" . }}
+      {{ else }}
+        {{ partial "navbar.html" . }}
+      {{ end }}
       {{ block "main" . }}{{ end }}
     </main>
-    
-    <!-- Footer -->
     {{ partial "footer.html" . }}
-
+    
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"></script>

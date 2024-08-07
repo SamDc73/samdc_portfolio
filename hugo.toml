@@ -28,17 +28,22 @@ paginatePath = "page"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
+    name = "Experience"
+    url = "/#experience"
     weight = 2
+  [[menu.main]]
+    name = "Skills"
+    url = "/#skills"
+    weight = 3
   [[menu.main]]
     name = "Projects"
     url = "/projects/"
-    weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
     weight = 4
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+
 
 [markup]
   [markup.highlight]
