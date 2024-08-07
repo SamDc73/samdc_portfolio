@@ -466,7 +466,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .badge {
@@ -560,6 +560,7 @@ body {
   object-position: center;
 }
 
+/* navbar */
 .link-after,
 .nav-link::after,
 .navbar-brand::after,
@@ -589,14 +590,27 @@ body {
   width: 100% !important;
 }
 
+.nav-item {
+  position: relative;
+}
+
 .navbar {
   margin-bottom: 7em;
 }
 
+.navbar-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .navbar-brand::after {
   margin-top: -0.25em;
 }
+
+/* navbar end */
 
 .markdown-body h1,
 .markdown-body h2 {
